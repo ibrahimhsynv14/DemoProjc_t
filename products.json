@@ -1,0 +1,58 @@
+[
+    {
+        "name":"Samsung Z Fold",
+        "count":34,
+        "feedback":"",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5UbGErOia1EbJ8uMktraZ_KiNPTcrGDxDv8MI-Oygw&s=10",
+        "price":600,
+        "id":1
+    },
+    {
+        "name":"Lenovo Computer",
+        "count":16,
+        "feedback":"",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHNimB1YyZWgPHiK2j0x8zHz_YQ8bTfS22vM9usXTIg&s=10",
+        "price":3000,
+        "id":2
+    },
+    {
+        "name":"Iphone 17 Pro Max",
+        "count":5,
+        "feedback":"",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTszOPqf8JO_h6lepO-zmOfqi2JmNBCX2LDZbMlbjJZyQ&s=10",
+        "price":1300,
+        "id":3
+    },
+    {
+        "name":"Acer Computer",
+        "count":17,
+        "feedback":"",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM9pUnc8G9JigTys6zlaDmaf4NSWO42TvdLsn-SblUqg&s=10",
+        "price":3300,
+        "id":4
+    },
+    {
+        "name":"Macbook",
+        "count":19,
+        "feedback":"",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKnLNUpWDXqU6Rhd4ptlz-oLpappzE29hyoaNNi7AkA&s=10",
+        "price":4500,
+        "id":5
+    },
+    {
+        "name":"Nokia 3310",
+        "count":23,
+        "feedback":"",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kJTn_8tU5o8bgOkM-Um7UP5pU1DMr1bdObMjn-9wvg&s=10",
+        "price":70,
+        "id":6
+    },
+    {
+        "name":"Macbook",
+        "count":19,
+        "feedback":"",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKnLNUpWDXqU6Rhd4ptlz-oLpappzE29hyoaNNi7AkA&s=10",
+        "price":4500,
+        "id":7
+    }
+]

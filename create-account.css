@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    min-height: 100vh;
+}
+.ad{
+    background-color: rgb(205, 56, 56);
+    padding: 15px 0px 35px 0px;
+}
+.ad p{
+    color: white;
+    text-align: center;
+}
+.ad a{
+    color: white;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: baseline;
+    border-bottom: 2px solid gray;
+}
+.search a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#search{
+    background-color: rgb(179, 179, 179);
+    border: none;
+    border-radius:7%;
+    padding: 10px;
+}
+#searchLogin{
+    background-color: rgb(205, 56, 56);
+    border: none;
+    border-radius:7%;
+    padding: 10px;
+    color: white;
+}
+#loginBut{
+    color: inherit;
+}
+.cart input{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom: 20px
+}
+.cart{
+    width: 400px;
+}
+.cartbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+h1{
+    text-align: center;
+}
+.cart #create{
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(205, 56, 56);
+    cursor: pointer;
+}
+.cart p{
+    text-align: center;
+}
+.cart p a{
+    color: rgb(205, 56, 56);
+    text-decoration: none;
+}

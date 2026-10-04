@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="create-account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="ad">
+                <p>Summer Sale For ALL Swim Suits And Free Express Delivery-OFF 50%! <a href="#">ShopNow</a></p>
+            </div>
+            <div class="search">
+                <h2>E-Commerce</h2>
+                
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a href="#">Sign Up</a>
+                <a href="#">Shop</a>
+                <input type="text" id="search" placeholder="What are you looking for?">
+                <button id="searchLogin"><a id="loginBut" href="login.html">Log in</a></button>
+            </div>
+        </div>
+        <div class="cartbody">
+            <div class="cart">
+                <form action="">
+                    <h1>Create an Account</h1>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Minimum 3 symbols">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" placeholder="Minimum 3 symbols">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Minimum 5 symbols">
+                    <button id="create">Create account</button>
+                    <p>Already have an account <a href="login.html">Log in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const createBut = document.querySelector('#create')
+        const nameInput = document.querySelector('#name')
+        const surnameInput = document.querySelector('#surname')
+        const usernameInput = document.querySelector('#username')
+        const emailInput = document.querySelector('#email')
+        const passwordInput = document.querySelector('#password')
+
+        createBut.addEventListener('click',(e)=>{check(e)})
+
+        function check(e){
+            e.preventDefault()
+            let valid = true
+            if(nameInput.value.length  < 3){nameInput.style.borderColor = 'red';valid = false}else{nameInput.style.borderColor = 'black'}
+            if(surnameInput.value.length  < 5){surnameInput.style.borderColor = 'red';valid = false}else{surnameInput.style.borderColor = 'black'}
+            if(usernameInput.value.length  === 0){usernameInput.style.borderColor = 'red';valid = false}else{usernameInput.style.borderColor = 'black'}
+            if(!emailInput.value.includes('@') || !emailInput.value.includes('.')){emailInput.style.borderColor = 'red';valid = false}else{emailInput.style.borderColor = 'black'}
+            if(passwordInput.value.length < 5){passwordInput.style.borderColor = 'red';valid = false}else{passwordInput.style.borderColor = 'black'}
+            if(valid){
+                localStorage.setItem('name', nameInput.value)
+                localStorage.setItem('surname', surnameInput.value)
+                localStorage.setItem('username', usernameInput.value)
+                localStorage.setItem('email', emailInput.value)
+                localStorage.setItem('password', passwordInput.value)
+                window.location.href = 'shop.html'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="ad">
+                <p>Summer Sale For ALL Swim Suits And Free Express Delivery-OFF 50%! <a href="#">ShopNow</a></p>
+            </div>
+            <div class="search">
+                <h2>E-commerce</h2>
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a href="#">Sign Up</a>
+                <a href="#">Shop</a>
+                <input type="text" id="search" placeholder="What are you looking for?">
+                <button id="searchLogin"><a id="loginBut" href="">Log in</a></button>
+            </div>
+        </div>
+        <div class="cartbody">
+            <div class="cart">
+                <form action="">
+                    <h1>Log in</h1>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <button id="log-in">Log in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const nameInput = document.querySelector('#name')
+        const passwordInput = document.querySelector('#password')
+        const loginBut = document.querySelector('#log-in')
+
+        loginBut.addEventListener('click',(e)=>{check(e)})
+        function check(e){
+            e.preventDefault()
+            let valid = true
+            const name = localStorage.getItem('name')
+            const password = localStorage.getItem('password')
+            if(name !== nameInput.value){
+                nameInput.style.borderColor = 'red'
+                valid = false
+            }
+            else{
+                nameInput.style.borderColor = 'black'
+            }
+            if(password !== passwordInput.value){
+                passwordInput.style.borderColor = 'red'
+                valid = false
+            }
+            else{
+                passwordInput.style.borderColor = 'black'
+            }
+            if(valid){
+                window.location.href = 'shop.html'
+            }
+        }
+    </script>
+</body>
+</html>
